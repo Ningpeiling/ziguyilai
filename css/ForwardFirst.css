@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url(../img/背景.jpg);
+	padding-right: 10 !important;
+	overflow: hidden;
+}
+
+.buttons {
+	background:transparent;
+	background-image: url(../img/anniu.png);
+	background-repeat: no-repeat;
+}
+
+.column.left {
+	float:left;
+	left:0;
+	height: 100%;
+  width: 50%;
+}
+.column.right {
+	height: 100%;
+	margin-left: 50%;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .column.left {
+    width: 100%;
+  }
+  .column.right{
+	  width:0;
+  }
+}
+#return {
+	margin: 5px;
+	padding: 10px;
+	height: 150px;
+	width: 250px;
+	position: absolute;
+	left: 55px;
+	top: 20px;
+}
+#title {
+	margin: 5px;
+	padding: 10px;
+	height: 250px;
+	width: 1000px;
+	position: absolute;
+	right: 50px;
+	top: 20px;
+	overflow:hidden;
+}
+#title a{
+	display: inline-block;
+}
+#picture {
+	height: 60vh;
+	width: 60vw;
+	padding-top: 30px;
+	position: relative;
+	top: 20vh;
+	text-align: center;
+	left: -70px;
+}
+#kepu {
+	margin: 5px;
+	padding: 10px;
+	clear: right;
+	float: right;
+	right: 0px;
+}
+#next {
+	margin: 5px;
+	padding: 10px;
+	clear: right;
+	float: right;
+	right: 0px;
+}
+
+#guess {
+	height: 60vh;
+	width: 40vw;
+	position: absolute;
+	top: 40vh;
+    left: 56vw;
+	font-size: 40px;
+	line-height: 35px;
+}
+.modal-body{
+	background:url(../img/背景2.png);
+	font-family:楷体;
+}
+
+#more {
+	height: 500px;
+	width: 1400px;
+	top:800px;
+	padding-top: 30px;
+	margin-left:80px;
+	font-family:楷体;
+	line-height: 35px;
+	font-size: 25px;
+}
+
+#pro{
+	margin-left:2vw;
+	font-family: "华文楷体";
+	font-size: 25px;
+	color: #c04851;
+}

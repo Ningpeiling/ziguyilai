@@ -1,0 +1,395 @@
+@charset "utf-8";
+/* CSS Document */
+html,body {
+	background-image: url(../img/背景.jpg);
+	margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  width:100%;
+}
+.maincontainer {
+  position: relative;
+  margin: 0 auto;
+}
+.modal-body{
+	background:url(../img/背景2.png);
+	font-family: "楷体";
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.leftpart {
+	float:left;
+	left:0;
+	height: 100%;
+  width: 30%;
+    position:absolute;
+}
+.rightpart {
+	height: 100%;
+	margin-left: 30%;
+  width: 70%;
+}
+@media screen and (max-width: 1200px) {
+.leftpart {width: 100%;}
+.rightpart {width: 0;}
+}
+
+.zhushi{
+	text-decoration:underline;
+}
+a.zhushi:hover{
+	color: #000000;
+}
+a.zi:link{
+	color:#b97375;
+	text-decoration: none;
+}
+a.zi:visited{
+	color: #000;
+	text-decoration: none;
+}
+a.zi:hover{
+	color: #b97375;
+	font-size: 15vh;
+	text-decoration:none;
+}
+a:active{color:gray;}
+.biaoqian
+{
+	font-size: 20px;
+	color: #000;
+}
+a.biaoqian:link{
+	text-decoration:none;
+}
+a.biaoqian:visited{
+	text-decorattion:none;
+}
+a.biaoqian:hover{
+	text-decoration:none;
+	color: #b97375;
+}
+#返回首页{
+	position: fixed;
+	height: 7vh;
+	width: auto;
+	left:5vh;
+	top:3vh;
+	z-index:2;
+	}
+#我的宝藏标题 {
+	position: fixed;
+	height: 87%;
+	width: auto;
+	left:0;
+	top:3vh;
+	z-index:1;
+}
+#img{
+	height:auto;
+	 width:450px;
+}
+#cheng{
+	position: absolute;
+	top: 7vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#zhong{
+	position: absolute;
+	top: 7vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#xiao{
+	position: absolute;
+	top: 27vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+/*#rang{
+	position: absolute;
+	top: 27vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}*/
+#li1{
+	position: absolute;
+	top: 27vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+/*#ru{
+	position: absolute;
+	top: 47vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}*/
+#qin{
+	position: absolute;
+	top: 47vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#lian{
+	position: absolute;
+	top: 47vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+/*#de{
+	position: absolute;
+	top: 87vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#dao{
+	position: absolute;
+	top: 87vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}*/
+#mei{
+	position: absolute;
+	top: 67vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#shan{
+	position: absolute;
+	top: 67vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#ren{
+	position: absolute;
+	top: 87vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+/*#jian{
+	position: absolute;
+	top:127vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}*/
+#fa{
+	position: absolute;
+	top: 87vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#fei{
+	position: absolute;
+	top: 107vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+/*#yi1{
+	position: absolute;
+	top: 167vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#yi2{
+	position: absolute;
+	top: 167vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#ji{
+	position: absolute;
+	top: 187vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#jiu{
+	position: absolute;
+	top: 187vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#li2{
+	position: absolute;
+	top: 207vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#zhu{
+	position: absolute;
+	top: 207vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}*/
+#kang{
+	position: absolute;
+	top: 107vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+/*#yuan{
+	position: absolute;
+	top: 227vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}*/
+#huan{
+	position: absolute;
+	top: 127vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+/*#bing{
+	position: absolute;
+	top: 247vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#you{
+	position: absolute;
+	top: 267vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#zhi{
+	position: absolute;
+	top: 267vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#xi{
+	position: absolute;
+	top: 287vh;
+	right: 42%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}
+#ge{
+	position: absolute;
+	top: 287vh;
+	right: 27%;
+	font-size: 14vh;
+	font-family: "华文楷体";
+	z-index:1;
+}*/
+#audio{
+	position: fixed;
+	bottom: 0vh;
+	right:0vw;
+	z-index:1;
+}
+
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+#content { 
+	width: 100%;
+	height: 100%; 
+	top: 0px;
+	overflow: hidden; 
+	position: absolute; 
+}
+#snowflake { 
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	overflow: hidden; 
+}
+.snowRoll { 
+	position: fixed; 
+	opacity: 0; 
+	-webkit-animation-name: mysnow; 
+	-webkit-animation-duration: 20s; 
+	-moz-animation-name: mysnow; 
+	-moz-animation-duration: 20s; 
+	height: 80px; 
+}
+@-webkit-keyframes mysnow {  
+	0% {
+	 bottom: 100%;
+	}
+	 50% {
+	 -webkit-transform: rotate(1080deg);
+	}
+	 100% {
+	 -webkit-transform: rotate(0deg) translate3d(50px, 50px, 50px);
+	}
+}
+@-moz-keyframes mysnow {  
+	0% {
+	 bottom: 100%;
+	}
+	 50% {
+	 -moz-transform: rotate(1080deg);
+	}
+	 100% {
+	 -moz-transform: rotate(0deg) translate3d(50px, 50px, 50px);
+	}
+}

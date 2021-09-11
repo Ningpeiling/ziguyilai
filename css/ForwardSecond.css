@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url(../img/背景.jpg);
+	width:0px; 
+	height:0px; 
+	overflow: hidden;
+}
+
+.buttons {
+	background:transparent;
+	background-image: url(../img/anniu.png);
+	background-repeat: no-repeat;
+}
+.modal-body{
+	background:url(../img/背景2.png);
+	font-family: "楷体";
+	font-size: 20px;
+	line-height: 30px;
+}
+.column.left {
+	float:left;
+	left:0;
+	height: 100%;
+  width: 50%;
+}
+.column.right {
+	height: 100%;
+	margin-left: 50%;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .column.left {
+    width: 100%;
+  }
+  .column.right{
+	  width:0;
+  }
+}
+
+#return {
+	margin: 5px;
+	padding: 10px;
+	height: 150px;
+	width: 250px;
+	position: absolute;
+	left: 55px;
+	top: 20px;
+}
+
+#title {
+	margin: 5px;
+	padding: 10px;
+	height: 175px;
+	width: 1000px;
+	position: absolute;
+	left: 350px;
+	top: 20px;
+	overflow:hidden;
+}
+
+#title a{
+	display: inline-block;
+}
+
+#riddle {
+	clear: left;
+	float: left;
+	left: 50%;
+	right: 0px;
+	width: 600px;
+	position: absolute;
+	height: auto;
+	margin-left: -300px;
+	top: 275px;
+	font-family: "华文楷体";
+	font-size: 25px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-style: normal;
+	line-height: 29px;
+}
+
+#letter{
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 275px;
+	padding: 0px;
+	z-index:1;
+}
+	
+.zi{
+	height: 400px;
+	top: 65vh;
+	z-index: 1;
+	padding-left: 100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -400px;
+	font-size: 100px;
+	font-family: "华文楷体";
+
+}
+
+.zi li {
+list-style:none; /* 将默认的列表符号去掉 */
+padding:0; /* 将默认的内边距去掉 */
+margin:0; /* 将默认的外边距去掉 */
+float:left;
+padding-left:30px;
+}
+
+#cheng:hover{
+	color: #b97375;
+	font-size: 110px;
+}
+
+#zhong:hover{
+	color: #b97375;
+	font-size: 110px;
+}
+#yong:hover{
+	color: #b97375;
+	font-size: 110px;
+}
+#jian:hover{
+	color: #b97375;
+	font-size: 110px;
+}
+
+#pro{
+	top: 85vh;
+	padding-left: 10px;
+	position: absolute;
+	height: 150px;
+	width: 300px;
+	padding-top: 25px;
+	right: 30vw;
+	font-family: "华文楷体";
+	font-size: 30px;
+	color: #c04851;
+}
+
+#guessmewho{
+	top: 70vh;
+	left: 50px;
+	position: absolute;
+	float: left;
+	height: auto;
+	width: 400px;
+	padding-top: 25px;
+	}
+	
+#kepu {
+	margin: 5px;
+	padding: 10px;
+	clear: right;
+	float: right;
+	right: 0px;
+}
+
+#more{
+	height: 500px;
+	width: 300px;
+	position: absolute;
+	top: 60vh;
+	right: 10vw;
+	float: right;
+	clear: right;
+}
+.modal-body{
+	background:url(../img/背景2.png);
+}

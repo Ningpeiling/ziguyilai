@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url(../img/背景.jpg);
+	overflow: hidden;
+	overflow-y:auto;
+}
+
+.buttons {
+	background:transparent;
+	background-image: url(../img/anniu.png);
+	background-repeat: no-repeat;
+}
+
+.column.left {
+	float:left;
+	left:0;
+	height: 100%;
+  width: 50%;
+}
+.column.right {
+	height: 100%;
+	margin-left: 50%;
+  width: 50%;
+}
+.htmleaf-container{
+	top: 200px;
+	left: 400px;
+	}
+.material-card Red{top: 200px;
+	left: 400px;}
+.col-md-4 col-sm-6 col-xs-12{top: 200px;
+	left: 400px;}
+@media screen and (max-width: 600px) {
+  .column.left {
+    width: 100%;
+  }
+  .column.right{
+	  width:0;
+  }
+}
+#return {
+	margin: 5px;
+	padding: 10px;
+	height: 150px;
+	width: 250px;
+	position: absolute;
+	left: 55px;
+	top: 20px;
+}
+#title {
+	margin: 5px;
+	padding: 10px;
+	height: 175px;
+	width: 800px;
+	position: absolute;
+	left: 450px;
+	top: 20px;
+	overflow:hidden;
+}
+#title a{
+	display: inline-block;
+}
+
+#bgmusic{
+	position: absolute;
+	width: 300px;
+	top: 40px;
+	right: 20px;
+}
+
+#story {
+	clear: left;
+	float: left;
+	right: 10vw;
+	width: 900px;
+	position: absolute;
+	height: 600px;
+	top: 30vh;
+	padding-top: 50px;
+	font-family: "楷体";
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-style: normal;
+	visibility: visible;
+}
+
+#story h3{
+	font-size: 28px;
+	line-height: 35px;
+}
+
+#picture {
+	height: 800px;
+	width: 400px;
+	position: fixed;
+	top: 30vh;
+	left:3vw;
+	float: left;
+	padding-top: 75px;
+	clear: left;
+	vertical-align: middle;
+	text-align: center;
+	visibility: visible;
+}
+
+#guessmewho{
+	top: 725px;
+	padding-left: 100px;
+	position: absolute;
+	float: left;
+	height: 500px;
+	width: 1000px;
+	padding-top: 25px;
+	}
+	
+#kepu {
+	margin: 5px;
+	padding: 10px;
+	clear: right;
+	float: right;
+	right: 0px;
+}
+
+#guess {
+	height: 800px;
+	width: 1400px;
+	padding-top: 10px;
+	padding-left: 90px;
+	top: 625px;
+	position: absolute;
+	left: 460px;
+	visibility: visible;
+}
+
+#more {
+	width: 1400px;
+	top:800px;
+	padding-top: 30px;
+	margin-left:80px;
+	font-family:楷体;
+	line-height: 35px;
+	font-size: 25px;
+}
+
+.modal-body{
+	background:url(../img/背景2.png);
+}
+
+#pro{
+	font-family: "华文楷体";
+	font-size: 25px;
+	color: #c04851;
+}
