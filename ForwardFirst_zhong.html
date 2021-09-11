@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<script src="js/jquery3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+
+<script>
+$('.carousel').carousel({
+  interval: 2000
+})
+</script>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  $('#example').tooltip(options)
+})
+</script>
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+  $('#example').popover(options)
+  $().popover(options)
+  $('#element').popover('show')
+  $('#element').popover('hide')
+  $('#element').popover('toggle')
+  $('#element').popover('destroy')
+})
+</script>
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>“字”古以来</title>
+
+<link href="css/ForwardFirst.css" rel="stylesheet" type="text/css" />
+
+        
+   
+    
+    <style type="text/css">
+  @import url("JS/jquery-ui-1.12.1.custom/jquery-ui.js.css");
+  </style>
+  
+    <style>
+        .d1{
+            width: 700px;
+            height: 1px;
+            background-color: #999999;
+        }
+		.d2{
+            width: 300px;
+            height: 6px;
+         
+        }
+        .content1{
+            margin: 5px;
+            width: 280px;
+            height: 180px;
+			font-family:楷体;
+			font-size:20px;
+        }
+
+        #answer{
+            margin-top: 5px;
+            font-size:20px;
+            width: 20vw;
+            height: 17vh;
+            resize: none;
+            outline:none;
+			background:none;
+      margin-right: 30px;
+	  margin-left:30px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/zzsc.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="js/bootstrap.js.css" rel="stylesheet" type="text/css" />
+    <link href="js/bootstrap.min.js.css" rel="stylesheet" type="text/css" />
+    <link href="js/jquery-3.4.1.min.js.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="js/animate.js.css" rel="stylesheet" type="text/css" />
+
+
+
+    <embed type=audio/mpeg src="img/bgmusic.mp3" hidden="true" autostart="true" loop="true"></embed>
+</head>
+
+<body>
+<script src="js/jquery-3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+ <script src="js/bootstrap.min.js"></script>
+
+
+
+
+    <div id="return">
+      <a href="homepage.html"><img src="img/return.png" height="60px" width="185px"></a>
+    </div>
+    <div  id ="title">
+      <img src="img/ForwardTitle1.png" height="150px" width="580px">
+      <audio src="img/1.mp3" controls="controls"  autoplay="autostart" loop="true"></audio>
+    </div>
+    <div id="picture">
+
+    <div class="content">
+     <div class="l-pic-index"></div>
+     <div class="r-pic-index"></div>
+     <div class="l-bg-index"></div>
+     <div class="r-bg-index"></div>
+     <div class="main-index">
+    <p class="intro-text">
+      <img src="img\忠.png" height="200px" width="150px" style="top:-50px; margin-top: -30px;">
+    </p>
+     </div>
+    </div>
+
+     <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+     <script type="text/javascript">
+     $(document).ready(function(){
+      //卷轴展开动画效果
+      $(".l-pic-index").animate({'left':'95px','top':'-4px'},1300);
+      $(".r-pic-index").animate({'right':'-23px','top':'-5px'},1450);
+      $(".l-bg-index").animate({'width':'433px','left':'73px'},1500);
+      $(".r-bg-index").animate({'width':'433px','right':'-38px'},1500,function(){
+        $(".main-index").fadeIn(800);
+      });
+    });
+    </script>
+
+
+      
+    </div>
+
+    <div id="guess">
+      
+      <div class="d1"></div>
+      <div class="content1">
+       <p></p><p></p><p></p><p></p>
+
+      
+<div class="input-group">
+   <input type="text" id="answer" class="form-control"  onkeydown="ent()"   placeholder="请输入你猜出来的字：">
+  <div class="input-group-btn">
+
+  <input type="image" name="queding" src="img\quedinganniu.png" height="auto" width="180px" onclick="fn()" style=" margin-right: 10px;"/>
+  <p></p >
+  <input type="image" name="tips" id="tips" src="img\tishianniu.png" height="auto" width="180px"  style=" visibility: hidden;"  data-toggle="modal" data-target="#myModal1"/>
+     <!--隐藏-->
+   <script>
+setTimeout("document.getElementById('tips').style.visibility='visible'",5000);
+</script>
+<!--ModalofTips-->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">提示框</h4>
+      </div>
+      <div class="modal-body">
+        <h4>精___报国</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">好的，我知道了</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+  </div>
+</div>   
+      
+     
+    <span style="float: left" id="pro"></span>
+    <div class="d2"></div>
+</div>
+      <div class="d1"></div>
+<script>
+    var inpAns;//输入的答案
+    var answer = "忠";//答案
+    var pro = document.getElementById('pro');//提示框
+    function fn(){
+        //点击按钮执行的事件
+        //判断是否1小时内答过,本应该把时间存储在服务器的,但是服务器目测你没有,所以存在本地缓存,本地缓存一些会玩的人可以修改掉
+        //var time = new Date().getTime();
+        //if(time - localStorage.getItem("test") < 60000){  //3600000 毫秒 是1小时,若你要测试可以改小 1000 = 1秒
+           // pro.innerText = "一分钟只能回答一次";
+           // return;
+       // }
+ 
+        inpAns = document.getElementById("answer").value.trim();
+        if(answer == inpAns){
+            pro.innerText = "恭喜你答对啦！";
+        }else{
+            pro.innerText = "再想想！";
+ 
+        }
+        localStorage.setItem("test",new Date().getTime());
+    }
+ 
+    function ent(){
+        //使摁回车键也能模拟点击了确定按钮
+        var key = window.event.keyCode;
+        if(key == 13){
+         fn();
+        }
+    }
+</script>
+
+<div id="more">
+<p></p><p></p><p></p>
+ <input type="image"  src="img\kepuanniu.png" height="auto" width="250px" data-toggle="modal" data-target=".bs-example-modal-lg" />
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">科普小讲堂</h4>
+      </div>
+      <div class="modal-body">
+      忠，共8画，部首：心字底。
+      <p>基本字义：形容词：忠诚无私，尽心竭力，忠厚；	</p>
+                <p>动词：尽忠，特指事上忠诚，忠效、忠孝；</p>
+                <p>名词：忠臣；通“中”。中间，适中。也可能是姓</p>
+      <p>详细字义：形声字。从心，中声。把心放在中间，不偏不倚就是忠，本义为尽心竭力。</p>
+      <p>忠君（忠诚于古代的皇帝），是儒家推崇的思想之一，这一思想影响了千年来各路文臣武臣的行事和思维。比如岳飞出征前让母亲在背上刺下“精忠报国”四字。</p>
+      <p>但是现在的忠更多的是说忠于祖国忠于党，作为祖国未来的花朵，为了不辜负祖国对我们的栽培，以后有能力了要为祖国为社会作出自己的贡献。</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">我了解了</button>
+      </div>
+    </div>
+  </div>
+ </div>  
+
+
+<a href="ForwardFirst_kang.html"><input type="image" name="next"  src="img\nextanniu.png" height="auto" width="250px"/></a>
+
+</div>
+
+
+
+</div>
+           
+      
+      
+     
+     
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <meta charset="utf-8">
+
+  <meta name="author" content="Dan Motzenbecker">
+
+  <meta name="description" content="OriDomi - origami for the web">
+
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
+
+
+  <link href="demo/demo.css" rel="stylesheet" type="text/css">
+
+    
+<script src="JS/jquery3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="JS/bootstrap.min.js"></script>
+<script src="oridomi.min.js"></script>
+  <script src="demo/demo.js"></script>      
+   
+<script>
+$('.carousel').carousel({
+  interval: 2000
+})
+</script>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  $('#example').tooltip(options)
+})
+</script>
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+  $('#example').popover(options)
+  $().popover(options)
+  $('#element').popover('show')
+  $('#element').popover('hide')
+  $('#element').popover('toggle')
+  $('#element').popover('destroy')
+})
+</script>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>“字”古以来</title>
+
+<link href="css/homepage.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="" ></script>
+        <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    
+    <style type="text/css">
+  @import url("JS/jquery-ui-1.12.1.custom/jquery-ui.js.css");
+    </style>
+  
+    <style>
+        .d1{
+            width: 300px;
+            height: 1px;
+            background-color: #999999;
+        }
+		.d2{
+            width: 300px;
+            height: 6px;
+         
+        }
+        .content{
+            margin: 5px;
+            width: 280px;
+            height: 120px;
+			font-family:楷体;
+        }
+        #answer{
+            margin-top: 5px;
+            width: 280px;
+            height: 50px;
+            resize: none;
+            outline:none;
+			background:none;
+        }
+    </style>
+    <link href="js/bootstrap.js.css" rel="stylesheet" type="text/css" />
+    <link href="js/bootstrap.min.js.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/ForwardSecond.css" rel="stylesheet" type="text/css" />
+    <link href="css/demo.css" rel="stylesheet" type="text/css" />
+     <embed type=audio/mpeg src="img/bgmusic.mp3" hidden="true" autostart="true" loop="true"></embed>
+</head>
+
+<body>
+
+<div id="guessmewho"><img src="img/guess.png" height="150" top="200" /></div>
+<script src="JS/jquery-3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="JS/bootstrap.min.js"></script>
+
+<div id="return">
+      <a href="homepage.html"><img src="img/return.png" height="60px" width="185px"></a>
+    </div>
+<div  id ="title">
+      <img src="img/RiddleTitle.png" height="150px" width="580px">
+      <audio src="img/1.mp3" controls="controls"  autoplay="autostart" loop="true"></audio>
+    </div>
+    
+
+<header>
+    <h1 class="logo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;字谜：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="5.2px">奔流到海不复回。</font></sup></h1>
+<p>
+    <font size="3px" family="华文楷体">鼠标左键拖动即可翻开字谜。</font>
+</p>
+</header>
+
+<script>
+
+var $folded = $('.paper').oriDomi({/* options object */});
+// when using jQuery, iterate OriDomi methods over multiple elements like this:
+$folded.oriDomi('accordion', 20);
+// to access the OriDomi instance at the top of the jQuery selection directly:
+var folded = $folded.oriDomi(true);
+var folded = new OriDomi('.paper', {
+  speed:           1200,  // folding duration in ms
+  ripple:          2,     // backwards ripple effect when animating
+  shadingIntesity: .5,    // lessen the shading effect
+  perspective:     800,   // smaller values exaggerate 3D distortion
+  maxAngle:        40,    // keep the user's folds within a range of -40 to 40 degrees
+  shading:         'soft' // change the shading type
+});
+folded.accordion(30);
+folded.curl(-50, 'top');
+// completely hides the element:
+folded.foldUp();
+folded.curl(-50, 'top', function(event, instance) {
+  // arguments are the transition event and the OriDomi instance
+  alert('It seems my folding days are through.');
+});
+folded.ramp(14, function() {
+  alert('A callback as a second argument...');
+});
+
+</script>
+
+
+<script src="oridomi.min.js"></script>
+
+<script src="demo/demo.js"></script>
+
+<div>
+<ul class="zi">
+<li id="cheng" ><span onclick="wrong();">渴</span> </li>
+<li id="zhong"><span onclick="wrong();">淼</span></li>
+<li id="yong"><span onclick="wrong();">沛</span></li>
+<li id="jian"><span onclick="right();">法</span></li>
+</ul>
+    <span id="pro"></span>
+</div>
+
+<script>
+    var pro = document.getElementById('pro');//提示框
+	var answer;
+	function right(){
+		pro.innerText = "恭喜你答对啦！";
+		}
+	function wrong(){
+		pro.innerText = "再想想！";
+		}
+</script>
+      
+<div id="more">
+<p></p><p></p><p></p>
+ <input type="image"  src="img\kepuanniu.png" height="auto" width="250px" data-toggle="modal" data-target=".bs-example-modal-lg" />
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">科普小讲堂</h4>
+      </div>
+      <div class="modal-body">
+       <p>体现统治阶段的意志，国家制定和颁布的公民必须遵守的行为规则：法办。法典。法官。法规。法律。法令。法定。法场。法理。法纪。法盲。法人（“自然人”的对称。）</p>
+      <p>指依法成立并能以自己的名义独立参与民事活动，享有民事权利和承担法律义务的社会组织）。法制。法治。犯法。守法。合法。宪法（国家的根本大法）。政法。奉公守法。逍遥法外。 
+      <p>处理事物的手段：办法。设法。手法。写法。 仿效：效法。 标准，规范，可仿效的。</p>
+      <p>佛家的道理：佛法。法号。法轮。法像。法门。 道家佛家的所谓拿妖捉怪的技术：法师。法器。法事。 </p>
+      <p>指“法国”：法文。法式大菜。 </p>
+      <p>姓。</p>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">我了解了</button>
+      </div>
+    </div>
+  </div>
+ </div>  
+
+
+<a href="ForwardSecond_mei.html"><input type="image" name="next"  src="img\nextanniu.png" height="auto" width="250px"/></a>
+
+</div>
+</div>
+
+
+
+</body>
+</html>

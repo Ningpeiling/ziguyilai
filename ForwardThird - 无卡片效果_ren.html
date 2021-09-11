@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<script src="JS/jquery3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="JS/bootstrap.min.js"></script>
+    
+   
+<script>
+$('.carousel').carousel({
+  interval: 2000
+})
+</script>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  $('#example').tooltip(options)
+})
+</script>
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+  $('#example').popover(options)
+  $().popover(options)
+  $('#element').popover('show')
+  $('#element').popover('hide')
+  $('#element').popover('toggle')
+  $('#element').popover('destroy')
+})
+</script>
+<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>“字”古以来</title>
+
+<link href="css/homepage.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="" ></script>
+        <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    
+    <style type="text/css">
+  @import url("JS/jquery-ui-1.12.1.custom/jquery-ui.js.css");
+    </style>
+  
+    <style>
+        .d1{
+            width: 700px;
+            height: 1px;
+            background-color: #999999;
+        }
+		.d2{
+            width: 300px;
+            height: 30px;
+         
+        }
+        .content{
+            margin: 5px;
+            width: 280px;
+            height: 65px;
+			font-family:楷体;
+			font-size: 20px;
+        }
+        #answer{
+            margin-top: 5px;
+			font-size: 20px;
+            width: 250px;
+            height: 75px;
+            resize: none;
+            outline:none;
+			background:none;
+			margin-right: 30px;
+        }
+    </style>
+    <link href="js/bootstrap.js.css" rel="stylesheet" type="text/css" />
+    <link href="js/bootstrap.min.js.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/ForwardThird.css" rel="stylesheet" type="text/css" />
+    <embed type=audio/mpeg src="img/bgmusic.mp3" hidden="true" autostart="true" loop="true"></embed>
+</head>
+
+<body>
+<script src="JS/jquery-3.4.1.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+ <script src="JS/bootstrap.min.js"></script>
+
+
+
+
+<div id="return">
+      <a href="homepage.html"><input type="image" src="img/return.png" height="auto" width="185px"/></a>
+    </div>
+    
+    
+<div  id ="title">
+      <img src="img/StoryTitle.png" height="150px" width="580px">
+    </div>
+    
+    
+<div id="bgmusic">
+    <audio src="img/1.mp3" controls="controls"  autoplay="autostart" loop="true"></audio>
+    </div>
+    
+    
+<div id="story">
+      <h3>&nbsp;&nbsp;&nbsp;&nbsp;三国时期的蜀国，在诸葛亮去世后任用蒋琬主持朝政。他的属下有个叫杨戏的，性格孤僻，讷于言语。蒋琬与他说话，他也是只应不答。有人看不惯，在蒋琬面前嘀咕说："杨戏这人对您如此怠慢，太不像话了！"
+蒋琬坦然一笑，说："人嘛，都有各自的脾气秉性。让杨戏当面说赞扬我的话，那可不是他的本性；让他当着众人的面说我的不是，他会觉得我下不来台。所以，他只好不做声了。其实，这正是他为人的可贵之处。"
+
+
+</h3>
+    </div>
+
+
+<div id="picture">
+      <img src="img/renstory.png" height="250px" width="300px">  
+</div>
+
+
+    
+
+<div id="guess" style="top:600px;">
+
+
+<div class="d1"></div>
+<div class="content">
+<p></p><p></p><p></p><p></p>
+<div class="input-group">
+   <input type="text" id="answer" class="form-control"  onkeydown="ent()" placeholder="请输入你猜出来的字：">
+  <div class="input-group-btn"><!--隐藏-->    
+
+      <input type="image" name="queding" src="img\quedinganniu.png" height="auto" width="180px" onclick="fn()" style="top: 60px;margin-right: 10px;"/>
+    <input type="image" name="tips" id="tips" src="img\tishianniu.png" height="auto" width="180px" style="margin-top: 10px; visibility: hidden;"data-toggle="modal" data-target="#myModal1"/>
+<script>
+setTimeout("document.getElementById('tips').style.visibility='visible'",5000);
+</script>
+<!--ModalofTips-->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">提示框</h4>
+      </div>
+      <div class="modal-body">
+        <h4>人与人相互友爱、互助、同情。</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">好的，我知道了</button>
+      </div>
+    </div>
+  </div>
+</div>  
+
+    <!-- Buttons -->
+  </div>
+</div>
+    <span style="float: left" id="pro"></span>
+     <div class="d2"></div>
+      <div class="d1"></div>
+<script>
+    var inpAns;//输入的答案
+    var answer = "仁";//答案
+    var pro = document.getElementById('pro');//提示框
+    function fn(){
+        //点击按钮执行的事件
+        //判断是否1小时内答过,本应该把时间存储在服务器的,但是服务器目测你没有,所以存在本地缓存,本地缓存一些会玩的人可以修改掉
+        //var time = new Date().getTime();
+        //if(time - localStorage.getItem("test") < 60000){  //3600000 毫秒 是1小时,若你要测试可以改小 1000 = 1秒
+           // pro.innerText = "一分钟只能回答一次";
+           // return;
+       // }
+ 
+        inpAns = document.getElementById("answer").value.trim();
+        if(answer == inpAns){
+            pro.innerText = "恭喜你答对啦！";
+        }else{
+            pro.innerText = "再想想！";
+ 
+        }
+        localStorage.setItem("test",new Date().getTime());
+    }
+ 
+    function ent(){
+        //使摁回车键也能模拟点击了确定按钮
+        var key = window.event.keyCode;
+        if(key == 13){
+         fn();
+        }
+    }
+</script>
+      
+<div id="more">
+<p></p><p></p><p></p>
+ <input type="image"  src="img\kepuanniu.png" height="auto" width="250px" data-toggle="modal" data-target=".bs-example-modal-lg" />
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">科普小讲堂</h4>
+      </div>
+      <div class="modal-body">
+      一种道德范畴，指人与人相互友爱、互助、同情等：仁义（ａ．仁爱与正义；ｂ．通情达理，性格温顺，能为别人着想）。仁爱。仁政。仁人志士（仁爱有节操的人）。仁义礼智（儒家的伦理思想）。仁至义尽。一视同仁（同样看待，不分厚薄）。 
+      <p>果核的最内部分或其他硬壳中可以吃的部分：核桃仁儿。 </p><p>姓。</p>
+
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  $('#example').tooltip(options)
+})
+</script>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">我了解了</button>
+      </div>
+    </div>
+  </div>
+ </div>  
+
+<a href="ForwardThird - 无卡片效果_fa.html"><input type="image" name="next"  src="img\nextanniu.png" height="auto" width="250px"/></a>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

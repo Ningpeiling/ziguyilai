@@ -1,0 +1,9 @@
+<input type="image" name="第三关" src="img\第三关.png" id='第三关' /></p> 
+ <input type="image" name="返回首页" id='返回首页' src="img\返回首页.png" />
+  <input name="确定" type="image" id='确定' src="img\确定.png" />
+  <input type="image" name="答案框" id='答案框' src="img\答案框.png" />
+  <input type="image" name="猜猜我是谁" id='猜猜我是谁' src="img\猜猜我是谁.png" />
+  <input type="image" name="请在此输入答案" id='请在此输入答案' src="img\请在此输入答案.png" />
+  <input type="image" name="样例图片" id='样例图片' src="img\样例图片.png" />
+  <input type="image" name="样例故事" id='样例故事' src="img\样例故事.png" />
+  
